@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JBread</title>
+  <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/slider.css">
+  <script src="./js/jquery-1.12.3.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/slider.js"></script>
+  <link rel="stylesheet" href="./css/slider.css">
+</head>
+
+<body>
+
+  <!-- 레이어 팝업창 -->
+  <div class="popup">
+    <img src="./imges/02-콘텐츠영역이미지/pop.jpg" alt="팝업창">
+    <a href="#">자세히보기</a>
+    <div class="close_box">
+        <button id="btn_close">닫기</button>
+    </div>
+</div>
+
+<script>
+$(function(){
+    // 팝업창 표시
+    $('.popup').addClass('show');
+
+    // 닫기 버튼 클릭시 팝업창 종료
+    $('#btn_close').click(function(){
+        $('.popup').removeClass('show');
+    });
+});
+</script>
+
+
+  <header id="main_header">
+    <h1>
+      <a href="index.html">
+        <img src="./imges/logo.png" alt="JBread">
+      </a>
+    </h1>
+    <nav id="main_gnb">
+      <ul class="depth1">
+        <li><a href="#">JB 소개</a>
+          <ul class="depth2">
+            <li><a href="#">브랜드 스토리</a></li>
+            <li><a href="#">JB 가맹점</a></li>
+          </ul>
+        </li>
+        <li><a href="#">제품 소개</a>
+          <ul class="depth2">
+            <li><a href="#">빵</a></li>
+            <li><a href="#">케이크</a></li>
+            <li><a href="#">음료</a></li>
+            <li><a href="#">선물</a></li>
+          </ul>
+        </li>
+        <li><a href="#">빵 만들기</a>
+          <ul class="depth2">
+            <li><a href="#">제빵 재료</a></li>
+            <li><a href="#">제빵 도구</a></li>
+            <li><a href="#">제빵 포장도구</a></li>
+          </ul>
+        </li>
+        <li><a href="#">커뮤니티</a>
+          <ul class="depth2">
+            <li><a href="#">나만의 레시피</a></li>
+            <li><a href="#">내가만든 빵</a></li>
+            <li><a href="#">빵 노하우</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="main_banner">
+    <div class="slider">
+      <img class="show" src="./imges/01-메인이미지/main1.png" alt="배너1">
+      <img src="./imges/01-메인이미지/main2.png" alt="배너2">
+      <img src="./imges/01-메인이미지/main3.png" alt="배너3">
+    </div>
+  </section>
+
+  <section id="sub_menu">
+    <div class="sub_1">
+      <h3>공지사항</h3>
+      <div class="line">
+      <ul>
+        <li>
+          <a href="#">제1회 JB 베이커리 워크숍에 초대합니다(서울권)</a>
+          <span class="date">2019-12-12</span>
+        </li>
+        <li>
+          <a href="#">올림픽공원 카페 초보 여성 창업을 추천받습니다.</a>
+          <span class="date">2019-12-10</span>
+        </li>
+        <li>
+          <a href="#">맛과 영양, 환경문제까지 생각하는 베이커리!</a>
+          <span class="date">2019-12-09</span>
+        </li>
+        <li>
+          <a href="#">고품질 크림으로 만든 디저트로 달콤하게 겨울나기</a>
+          <span class="date">2019-12-07</span>
+        </li>
+        <li>
+          <a href="#">온가족이 함께 즐기는 베이킹 체험 교실</a>
+          <span class="date">2019-12-05</span>
+        </li>
+      </ul>
+    </div>
+    </div>
+    <div class="sub_2">
+      <h3>갤러리</h3>
+      <img src="./imges/01-메인이미지/g1.png" alt="고수의 레시피">
+      <img src="./imges/01-메인이미지/g2.png" alt="모임 일정">
+      <img src="./imges/01-메인이미지/g3.png" alt="식품안전관리">
+    </div>
+    <div class="sub_3">
+      <a href="#"><img src="./imges/01-메인이미지/ba_s3.png" alt="봉사활동 지원자 모집배너"></a>
+      <a href="#"><img src="./imges/01-메인이미지/ba_s1.png" alt="베이킹클래스 배너"></a>
+      <a href="#"></a><img src="./imges/01-메인이미지/ba_s2.png" alt="창업 배너">
+    </div>
+
+  </section>
+
+  <footer id="main_footer">
+    <div class="foo">
+    <h1><img src="./imges/logo-ccc.png" alt="JBcompany"></h1>
+    <div class="text">
+    <p>법적고지 / <a href="#"><span>개인정보취급방침</span></a> / <a href="#"><span>개인정보처리방침</span></a></p>
+    <address>상호명:(주)JB컴퍼니 / 대표자:윤정우 / 개인정보관리책임자:김선정 / 상담전화:1588-0789 / 사업장주소:서울특별시 금천구 가산동 가산디지털2로</address>
+    <p class="copyright">Copyright &copy; 2019 JBcompany, All rights Reserved.</p>
+  </div>
+  <a href="#"><img src="./imges/logo-family.png" alt="패밀리사이트"></a>
+</div>
+  </footer>
+
+
+  
+
+
+
+  <script>
+    $(function(){
+      var count = 1; // 이미지 번호
+
+      // 인터벌 함수(함수, 재생시간ms)
+      setInterval(function(){
+                
+        console.log(count);
+        if(count > 2) count = 0;
+        // 모든 이미지 비표시
+        $('.slider img').removeClass('show');
+        // 현재 이미지만 표시
+        $('.slider img')
+          .eq(count)
+          .addClass('show');
+
+        /* 인디케이터(이미지번호표시) */
+        $('.indicator > a').removeClass('show');
+        $('.indicator > a')
+          .eq(count)
+          .addClass('show');
+
+        count++;
+      }, 5000);
+
+    });
+  
+  </script>
+  
+</body>
+</html>
