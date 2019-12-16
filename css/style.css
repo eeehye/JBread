@@ -89,6 +89,7 @@ body {
     color: #83d154;
 }
 
+/* 메인메뉴 */
 #main_banner {
     padding-top: 10px;
     position: relative;
@@ -102,6 +103,8 @@ body {
   }
   #main_banner .slider img { width: 100%;}
 
+   
+/* 서브메뉴 */
   #sub_menu {
     width: 1200px;
     margin: 0 auto;
@@ -125,6 +128,8 @@ body {
       /* background: #ccc; */
   }
   #sub_menu .sub_1 .line ul li a{
+      color: #999;
+      font-size: 12px;
       float: left;
       line-height: 2em;
   }
@@ -155,6 +160,8 @@ body {
     width: 370px;
     padding-top: 5px;
 }
+
+/*  */
 #main_footer {
     clear: both;
     text-align: center;
