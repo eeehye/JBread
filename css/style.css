@@ -128,12 +128,12 @@ body {
       /* background: #ccc; */
   }
   #sub_menu .sub_1 .line ul li a{
-      color: #999;
-      font-size: 12px;
       float: left;
       line-height: 2em;
   }
   #sub_menu .sub_1 .line .date{
+      color: #999;
+      font-size: 12px;
       padding-right: 2px;
       float: right;
       line-height: 2em;
